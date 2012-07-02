@@ -1,0 +1,27 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Eventname</th>
+    <th>Order item</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.username %></td>
+    <td><%= order.eventname %></td>
+    <td><%= order.order_item %></td>
+    <td><%= link_to 'Show', order %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_order_path %>

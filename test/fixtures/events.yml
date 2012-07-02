@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  eventdate: 2012-07-01
+  restaurant: MyString
+  menu: MyString
+
+two:
+  name: MyString
+  eventdate: 2012-07-01
+  restaurant: MyString
+  menu: MyString

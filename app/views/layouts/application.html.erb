@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LunchOrder</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <%= link_to('Lunch Order System', root_url, {:class => 'brand'}) %>
+            <ul class="nav">
+              <li>
+                <li id="nav_home"><%= link_to 'event', event_path() %></li>
+              </li>
+              <li>
+                <li id="nav_home"><%= link_to 'order', order_url() %></li>
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li>
+                  Welcome               
+              </li>
+            </ul>
+          </div>
+        </div>
+ </div>
+<%= yield %>
+
+</body>
+</html>
